@@ -9,7 +9,7 @@ Desenvolvido com React + TypeScript + Vite
 
 Para armazenamento de dados, como mudança de cores e envio de mensagens foi feita integração com Firebase Realtime Database, que proporciona rápida atualização dos dados.
 
-### Dependencies
+### Dependências
 - [Tailwind css](https://tailwindcss.com/)
 - [Radix Ui](https://www.radix-ui.com/)
 - [Shadcn Ui](https://ui.shadcn.com/)
@@ -17,6 +17,5 @@ Para armazenamento de dados, como mudança de cores e envio de mensagens foi fei
 - [React Icons](https://react-icons.github.io/react-icons/)
 
 
-
-## Author
+## Autor
 Wellington Galvão: https://github.com/wellingtongmota
