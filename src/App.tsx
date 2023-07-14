@@ -55,7 +55,7 @@ const App = () => {
 
         <div className="w-full h-full flex flex-col gap-3">
           <Button color={color1} onHandleClick={() => changeColor('button1', 'bg-red-600')}>01</Button>
-          <Button color={color2} onHandleClick={() => changeColor('button2', 'bg-red-600')}>GRUA</Button>
+          <Button color={color2} onHandleClick={() => changeColor('button2', 'bg-red-600')}>02</Button>
           <Button color={color3} onHandleClick={() => changeColor('button3', 'bg-red-600')}>03</Button>
         </div>
 
