@@ -13,7 +13,7 @@ const Messages = ({ messages, onHandleClick }: MessagesProps) => {
   return (
     <div className="flex items-start">
 
-      <div className="flex flex-col flex-1 mb-2 overflow-y-scroll">
+      <div className="flex flex-col flex-1 mb-2 overflow-y-scroll max-h-20">
         {
           <p className="text-zinc-50">{messages}</p>
         }
