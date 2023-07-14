@@ -1,8 +1,8 @@
 const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
+    <main className="w-full h-screen flex items-center justify-center bg-zinc-900 text-zinc-100">
       Hello world!
-    </h1>
+    </main>
   )
 }
 
