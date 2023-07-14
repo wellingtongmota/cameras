@@ -24,7 +24,7 @@ const App = () => {
         console.log('Data not found');
       }
     });
-  }, [buttonsRef])
+  }, [])
 
   //write with update function
   const changeColor = (button: string, color: string) => {

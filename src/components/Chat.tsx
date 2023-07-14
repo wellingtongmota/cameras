@@ -29,7 +29,7 @@ const Chat = () => {
       else
         console.log('Data not found');
     });
-  }, [messagesRef])
+  }, [])
 
   //write
   const writeMessage = (text: string) => {
