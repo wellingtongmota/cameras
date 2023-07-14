@@ -1,7 +1,7 @@
 # Cameras
 
 <p align="center">
-  <img width="250" height="auto" src="https://i.imgur.com/ViAUOzw.png">
+  <img width="250" height="auto" src="https://i.imgur.com/ujJ2dbf.png">
 </p>
 
 ### Site criado para controle de câmeras
@@ -12,7 +12,7 @@ Para armazenamento de dados, como mudança de cores e envio de mensagens foi fei
 ### Dependencies
 - [Tailwind css](https://tailwindcss.com/)
 - [Radix Ui](https://www.radix-ui.com/)
-- [Sahdcn Ui](https://ui.shadcn.com/)
+- [Shadcn Ui](https://ui.shadcn.com/)
 - [Firebase](https://firebase.google.com/)
 - [React Icons](https://react-icons.github.io/react-icons/)
 
