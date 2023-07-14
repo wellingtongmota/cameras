@@ -23,7 +23,7 @@ const Messages = ({ messages, onHandleClick }: MessagesProps) => {
       <Button 
         variant="link" 
         size="icon" 
-        className="hover:opacity-80 transition ease-in-out delay-75"
+        className="hover:opacity-80"
         onClick={handleClick}
       >
         <IoCloseOutline className="h-6 w-6 text-zinc-500" />

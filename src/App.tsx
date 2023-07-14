@@ -49,9 +49,9 @@ const App = () => {
   }
 
   return (
-    <main className="w-full h-screen flex items-center justify-center bg-zinc-900 text-zinc-100 p-3">
+    <main className="w-full h-[100dvh] flex items-center justify-center bg-zinc-900 text-zinc-100 p-3">
 
-      <div className="w-full md:w-80 lg:w-5/12 h-full flex flex-col justify-between gap-3">
+      <div className="w-full md:w-80 lg:w-4/12 h-full flex flex-col justify-between gap-3">
 
         <div className="w-full h-full flex flex-col gap-3">
           <Button color={color1} onHandleClick={() => changeColor('button1', 'bg-red-600')}>01</Button>
