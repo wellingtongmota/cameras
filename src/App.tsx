@@ -6,9 +6,9 @@ import Chat from "./components/Chat";
 
 const App = () => {
 
-  const [color1, setColor1] = useState<string>('bg-green-700');
-  const [color2, setColor2] = useState<string>('bg-green-700');
-  const [color3, setColor3] = useState<string>('bg-green-700');
+  const [color1, setColor1] = useState<string>('bg-green-600');
+  const [color2, setColor2] = useState<string>('bg-green-600');
+  const [color3, setColor3] = useState<string>('bg-green-600');
 
   const buttonsRef = ref(db, 'buttons/')
 
@@ -40,9 +40,9 @@ const App = () => {
   const resetColors = () => {
 
     const updates = {
-      button1: { color: 'bg-green-700' },
-      button2: { color: 'bg-green-700' },
-      button3: { color: 'bg-green-700' }
+      button1: { color: 'bg-green-600' },
+      button2: { color: 'bg-green-600' },
+      button3: { color: 'bg-green-600' }
     }
 
     update(buttonsRef, updates)
@@ -59,8 +59,8 @@ const App = () => {
           <Button color={color3} onHandleClick={() => changeColor('button3', 'bg-red-600')}>03</Button>
         </div>
 
-        <Button color="bg-amber-500" onHandleClick={resetColors}>
-          Liberar
+        <Button color="bg-amber-400" onHandleClick={resetColors}>
+          <p className="text-zinc-950">Liberar</p>
         </Button>
 
         <Chat />
