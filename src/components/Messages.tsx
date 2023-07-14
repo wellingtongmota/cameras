@@ -1,5 +1,6 @@
 import { Button } from "./ui/button"
 import { IoCloseOutline } from "react-icons/io5";
+import { ScrollArea } from "./ui/scroll-area";
 
 interface MessagesProps {
   messages: string,
@@ -13,11 +14,11 @@ const Messages = ({ messages, onHandleClick }: MessagesProps) => {
   return (
     <div className="flex items-start">
 
-      <div className="flex flex-col flex-1 mb-2 overflow-y-scroll max-h-20">
+      <ScrollArea  className="flex flex-col flex-1 mb-2 max-h-24 pr-2">
         {
           <p className="text-zinc-50">{messages}</p>
         }
-      </div>
+      </ScrollArea>
 
       <Button 
         variant="link" 
