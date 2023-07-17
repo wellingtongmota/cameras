@@ -47,7 +47,7 @@ const Chat = () => {
   }
 
   return (
-    <div className="flex flex-col p-2 rounded-md bg-zinc-950 ">
+    <div className="flex flex-col p-2 rounded-md bg-gray-950 ">
 
       {message.length != 0 &&
         <Messages messages={message} onHandleClick={deleteMessages} />

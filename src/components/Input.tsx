@@ -18,11 +18,12 @@ const Input = ({ text, onHandleChange, onHandleClick, onHandleKeyDown }: InputPr
   return (
     <div className="flex gap-2 content-center">
       <input 
-        className="bg-zinc-900 text-zinc-100 flex-1 rounded-md px-3 py-1 outline-0"
+        className="bg-gray-900 text-zinc-100 flex-1 rounded-md px-3 py-1 outline-0"
         placeholder="Mensagem"
         value={text}
         onChange={handleChange}
         onKeyDown={handleKeyDown}
+        maxLength={150}
       />
 
       <Button 
@@ -32,7 +33,7 @@ const Input = ({ text, onHandleChange, onHandleClick, onHandleKeyDown }: InputPr
 
         onClick={handleClick}
       >
-        <IoSend className="h-6 w-6 text-zinc-500" />
+        <IoSend className="h-6 w-6 text-gray-600" />
       </Button>
     </div>
   )

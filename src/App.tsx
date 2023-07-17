@@ -6,9 +6,9 @@ import Chat from "./components/Chat";
 
 const App = () => {
 
-  const [color1, setColor1] = useState<string>('bg-green-600');
-  const [color2, setColor2] = useState<string>('bg-green-600');
-  const [color3, setColor3] = useState<string>('bg-green-600');
+  const [color1, setColor1] = useState<string>('bg-green-500');
+  const [color2, setColor2] = useState<string>('bg-green-500');
+  const [color3, setColor3] = useState<string>('bg-green-500');
 
   const buttonsRef = ref(db, 'buttons/')
 
@@ -40,23 +40,23 @@ const App = () => {
   const resetColors = () => {
 
     const updates = {
-      button1: { color: 'bg-green-600' },
-      button2: { color: 'bg-green-600' },
-      button3: { color: 'bg-green-600' }
+      button1: { color: 'bg-green-500' },
+      button2: { color: 'bg-green-500' },
+      button3: { color: 'bg-green-500' }
     }
 
     update(buttonsRef, updates)
   }
 
   return (
-    <main className="w-full h-[100dvh] flex items-center justify-center bg-zinc-900 text-zinc-100 p-3">
+    <main className="w-full h-[100dvh] flex items-center justify-center bg-gray-900 text-zinc-100 p-3">
 
       <div className="w-full md:w-80 lg:w-4/12 h-full flex flex-col justify-between gap-3">
 
-        <div className="w-full h-full flex flex-col gap-3">
-          <Button color={color1} onHandleClick={() => changeColor('button1', 'bg-red-600')}>01</Button>
-          <Button color={color2} onHandleClick={() => changeColor('button2', 'bg-red-600')}>02</Button>
-          <Button color={color3} onHandleClick={() => changeColor('button3', 'bg-red-600')}>03</Button>
+        <div className="w-full flex flex-col flex-1 gap-3">
+          <Button color={color1} onHandleClick={() => changeColor('button1', 'bg-red-500')}>01</Button>
+          <Button color={color2} onHandleClick={() => changeColor('button2', 'bg-red-500')}>02</Button>
+          <Button color={color3} onHandleClick={() => changeColor('button3', 'bg-red-500')}>03</Button>
         </div>
 
         <Button color="bg-amber-400" onHandleClick={resetColors}>

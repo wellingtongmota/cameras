@@ -14,7 +14,7 @@ const Messages = ({ messages, onHandleClick }: MessagesProps) => {
   return (
     <div className="flex items-start">
 
-      <ScrollArea  className="flex flex-col flex-1 mb-2 max-h-24 pr-4">
+      <ScrollArea  className="flex flex-col flex-1 mb-2 max-h-28 pr-4">
         {
           <p className="text-zinc-50">{messages}</p>
         }
