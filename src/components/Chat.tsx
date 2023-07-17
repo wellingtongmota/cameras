@@ -3,6 +3,7 @@ import Input from './Input'
 import { onValue, ref, remove, set } from 'firebase/database';
 import { db } from '@/firebase';
 import Messages from './Messages';
+import { Badge } from './ui/badge';
 
 const Chat = () => {
 
@@ -18,6 +19,11 @@ const Chat = () => {
       writeMessage(text)
     }
   }
+
+  const quickTexts: string[] = [
+    'OK',
+    '👍'
+  ]
 
   //read
   useEffect(() => {
@@ -52,6 +58,12 @@ const Chat = () => {
       {message.length != 0 &&
         <Messages messages={message} onHandleClick={deleteMessages} />
       }
+
+      <div className='flex m-1 gap-1'>
+        {quickTexts.map(text =>
+          <Badge key={text} variant='secondary' className='cursor-pointer' onClick={() => writeMessage(text)} >{text}</Badge>
+        )}
+      </div>
 
       <Input
         text={text}

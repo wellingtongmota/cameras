@@ -54,12 +54,12 @@ const App = () => {
       <div className="w-full md:w-80 lg:w-4/12 h-full flex flex-col justify-between gap-3">
 
         <div className="w-full flex flex-col flex-1 gap-3">
-          <Button color={color1} onHandleClick={() => changeColor('button1', 'bg-red-500')}>01</Button>
-          <Button color={color2} onHandleClick={() => changeColor('button2', 'bg-red-500')}>02</Button>
-          <Button color={color3} onHandleClick={() => changeColor('button3', 'bg-red-500')}>03</Button>
+          <Button color={color1} onHandleClick={() => changeColor('button1', 'bg-red-600')}>01</Button>
+          <Button color={color2} onHandleClick={() => changeColor('button2', 'bg-red-600')}>02</Button>
+          <Button color={color3} onHandleClick={() => changeColor('button3', 'bg-red-600')}>03</Button>
         </div>
 
-        <Button color="bg-amber-400" onHandleClick={resetColors}>
+        <Button color="bg-yellow-400" onHandleClick={resetColors}>
           <p className="text-zinc-950">Liberar</p>
         </Button>
 
